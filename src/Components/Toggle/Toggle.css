@@ -1,0 +1,25 @@
+.toggle{
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #f43b47;
+    gap: 7px;
+    position: relative;
+    cursor: pointer;
+    padding: 4px;
+}
+.toggle>*{
+    width: 1.5rem;
+    height: 1.3rem;
+    color: #f43b47;
+}
+.t-button{
+    border-radius: 40%;
+    position: absolute;
+    background-color:#f43b47;
+}
+.toggle>:nth-child(2){
+    color: white;
+}
+.toggle>:nth-child(1){
+    color: var(--black);
+}

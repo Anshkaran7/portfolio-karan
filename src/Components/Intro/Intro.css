@@ -1,0 +1,132 @@
+.i-name{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.intro{
+    height: 77vh;
+    margin-top: 6rem;
+    display: flex;
+    position: relative;
+    background-size: contain;
+}
+.i-left{
+    display: flex;
+    flex: 1;
+    position: relative;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.i-name>:nth-child(1){
+    color: var(--black);
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.i-name>:nth-child(2){
+    color: #f43b47;
+    font-size: 2.3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.i-name>:nth-child(3){
+    color: gray;
+    font-weight: 100;
+    font-size: .8 rem;
+    margin-top: 17px;
+}
+.i-icons{
+    display: flex;
+    gap: 0rem;
+    margin: 2rem;
+    align-self: center;
+}
+.i-icons>*{
+    transform: scale(0.5);
+    -webkit-transition-property: all; 
+    -webkit-transition-duration: 0.4s; 
+    -webkit-transition-timing-function: ease-in-out; 
+}
+.i-icons>*:hover{
+    cursor: pointer;
+    transform: scale(0.7); 
+}
+.i-right{
+    flex: 1;
+    position: relative;
+}
+.i-right>*{
+    position: absolute;
+    z-index: 1;
+}
+.i-right>:nth-child(1){
+    transform: scale(0.69);
+    left: -9%;
+    top: 4%;
+    
+}
+.i-right>:nth-child(2){
+    transform: scale(0.67);
+    left: -2rem;
+    /* top: -4.6rem; */
+    top: 1%;
+}
+.i-right>:nth-child(3){
+    transform: scale(1.4);
+    left: 28%;
+    top:15%;
+}
+.i-right>:nth-child(4){
+    transform: scale(0.6);
+    left: -24%;
+    top: -19%;
+    border-radius: 50%;
+    padding: 0;
+}
+@media screen and (max-width:480px) {
+    .intro{
+        flex-direction: column ;
+        gap: 4rem;
+        height: 38rem;
+    } 
+    .i-right{
+        transform: scale(0.8);
+        left: -3rem;
+    }
+    .i-name{
+        transform: scale(0.8);
+        top: -10%;
+        position: relative;
+    }
+    .i-icons{
+        transform: scale(0.6);
+        top: -20%;
+        position: relative;
+    }
+    .i-right{
+        position: relative;
+        top: -30%;
+    }
+    .i-right>:nth-child(1),.i-right>:nth-child(2){
+        transform: scale(0.41);
+        position: absolute;
+        left: -34%;
+        top: -35%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        
+       
+    }
+    .i-right>:nth-child(3){
+        transform: scale(0.99);
+    }
+    .i-right>:nth-child(4){
+        transform: scale(0.5);
+        left: 40%;
+
+    }
+    .floating-div{
+        transform: scale(0.7);
+       opacity: 80%;
+    }
+    
+}

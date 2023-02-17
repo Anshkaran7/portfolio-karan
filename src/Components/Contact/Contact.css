@@ -1,0 +1,90 @@
+.contact{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 80vh;
+    margin-top: 4rem;
+      /* scroll */
+  padding-top: 3rem;
+}
+.c-right {
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    padding-top: 90px;
+
+  }
+  .c-left{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 0.5;
+}
+.c-left>form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+textarea{
+    height: 6rem!important;
+}
+.c-btn{
+    width: 50%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.c-left .user{
+width: 20rem;
+height: 2rem;
+padding: 0.3em;
+outline: none;
+padding-left: 13px;
+border: 2px solid #88d3ce;
+border-radius: 8px;
+font-size: 16px;
+background-color: transparent;  }
+
+
+.i-contact {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+
+  }
+  
+  .i-contact > :nth-child(1) {
+    color: var(--black);
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .i-contact > :nth-child(2) {
+    color: #f43b47;
+    font-size: 2rem;
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }  
+  @media screen and (max-width: 480px) {
+    .contact{
+        height: 40rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .c-left .user{
+        width: 12rem;
+        height: auto;
+    }
+    .c-right{
+      transform: scale(0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+    }
+
+}
