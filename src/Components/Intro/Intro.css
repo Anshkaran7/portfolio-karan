@@ -34,13 +34,13 @@
     margin-top: 17px;
 }
 .i-icons{
-    display: flex;
-    gap: 0rem;
-    margin: 2rem;
+   display: flex;
+   flex: 0.3;
     align-self: center;
 }
 .i-icons>*{
     transform: scale(0.5);
+   
     -webkit-transition-property: all; 
     -webkit-transition-duration: 0.4s; 
     -webkit-transition-timing-function: ease-in-out; 

@@ -6,7 +6,7 @@ import About from "../About/About";
 
 const Navbar = () => {
   return (
-    <div  id="Navbar">
+    <nav id="Navbar">
       <div className="n-wrapper">
         <div className="n-left">
           <div className="n-name">Karan</div>
@@ -15,22 +15,36 @@ const Navbar = () => {
         <div className="n-right">
           <div className="n-list">
             <ul style={{ listStyleType: "none" }}>
-              <Link spy={true} to="Navbar" smooth={true} activeClass="activeClass">
-              <li>Home</li>
+              <Link
+                spy={true}
+                to="Navbar"
+                smooth={true}
+                activeClass="activeClass"
+              >
+                <li>Home</li>
               </Link>
-              <Link spy={true} to="About" smooth={true} activeClass="activeClass">
-              <li>About</li>
+              <Link
+                spy={true}
+                to="About"
+                smooth={true}
+                activeClass="activeClass"
+              >
+                <li>About</li>
               </Link>
-              <Link spy={true} to="projects" smooth={true} activeClass="activeClass">
-              <li>Projects</li>
+              <Link
+                spy={true}
+                to="projects"
+                smooth={true}
+                activeClass="activeClass"
+              >
+                <li>Projects</li>
               </Link>
-             
             </ul>
           </div>
           <button className="button ct-button">Contact</button>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

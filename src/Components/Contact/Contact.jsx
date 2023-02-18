@@ -5,31 +5,17 @@ import { useContext } from "react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { motion } from "framer-motion";
-
 const Contact = () => {
-  const transition = { duration: 2, type: "spring" };
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_hn5lqvn",
-        "template_ei9jxsg",
-        form.current,
-        "dD1CJrkDYVp5SRT8E"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  };
+    const form = useRef();
+  
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_ryajw3b', 'template_i8h1wqc', form.current, 'dD1CJrkDYVp5SRT8E')
+  
+      e.target.reset()
+    };
+  const transition ={duration:3,type:'spring'}
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (

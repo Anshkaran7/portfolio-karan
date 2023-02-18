@@ -1,4 +1,4 @@
-.footer {
+footer {
     display: flex;
     position: relative;
     margin-top: -7rem;
@@ -22,12 +22,15 @@
     color: rgb(228, 225, 225);
   }
   .f-icons {
-    gap: 1rem;
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 0.7rem;
     display: flex;
+    border: 1px solid transparent;
   }
   .f-icons > *:hover {
     cursor: pointer;
-    transform: scale(1.3);
+    transform: scale(1.2);
   }
   f-icons > * {
     -webkit-transition-property: all;

@@ -5,28 +5,27 @@ import Project1 from "../../img/project1.jpg";
 import Project2 from "../../img/project2.jpg";
 import Project3 from "../../img/project3.jpg";
 import Project4 from "../../img/project4.jpg";
-import { themeContext } from "../../Context";
-import { useContext } from "react";
+// import { themeContext } from "../../Context";
+// import { useContext } from "react";
 import { motion } from "framer-motion"
 
 const projects = () => {
-  const transition ={duration:3,type:'spring'}
+  // const transition ={duration:3,type:'spring'}
 
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
+  // const theme = useContext(themeContext);
+  // const darkMode = theme.state.darkMode;
 
   return (
     <div className="project" id="Project">
-      <motion.div initial={{left:'-50%'}}
-        whileInView={{left:'5%'}}
-        transition={transition}
+     <div
         className="i-project" >
         <span 
         
-         style={{ color: darkMode ? "white" : "" }}>
+        //  style={{ color: darkMode ? "white" : "" }}
+         >
           My Recent <span id="title-p">Projects</span>{" "}
         </span>
-      </motion.div>
+      </div>
       <div className="projects">
         <div className="projectA">
           <Work
@@ -64,3 +63,6 @@ const projects = () => {
 };
 
 export default projects;
+{/* <motion.div initial={{left:'-50%'}}
+whileInView={{left:'5%'}}
+transition={transition} */}
