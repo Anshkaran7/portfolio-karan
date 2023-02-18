@@ -39,15 +39,14 @@ padding-bottom: 20px;
     font-size: 13px;
     border-radius: 6px;
     border: 1px solid #fb6e3b;
-    width: 80%;
-    height: 10%;
+    
     background: transparent;
     align-self: center;
 }
 .c-button:hover{
     cursor: pointer;
     box-shadow:0 0 3px #ee6161 ;
-    background-color:  #8989ba;
+    background-color:  #ff7675;
     
 }
 

@@ -35,12 +35,14 @@
 }
 .i-icons{
    display: flex;
-   flex: 0.3;
-    align-self: center;
+   height: 2vh;
+   width: 2vh;
+   align-self: center;
+   justify-content: center;
+   
 }
 .i-icons>*{
     transform: scale(0.5);
-   
     -webkit-transition-property: all; 
     -webkit-transition-duration: 0.4s; 
     -webkit-transition-timing-function: ease-in-out; 

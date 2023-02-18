@@ -41,18 +41,26 @@
     left: 145%;
     position: relative;
   }
-  .n-list {
+  /* .n-list {
     top: -40%;
     position: relative;
     cursor: pointer;
     
+  } */
+  .n-list>*{
+    
+    cursor: pointer;
   }
   .n-list > ul {
     display: flex;
     position: relative;
     left: 20%;
   }
-  
+  li{
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.02s;
+    -webkit-transition-timing-function: ease;
+  }
   li:hover {
     color: #f43b47;
     border-bottom: 3px solid #f43b47;
