@@ -36,6 +36,7 @@ const About = () => {
       <div className="cards">
         <div className="card1" style={{ left: "20rem" }}>
           <Card
+          isButtonVisible={true}
             photo={WebD}
             heading={"Frontend Web Developer"}
             detail={
