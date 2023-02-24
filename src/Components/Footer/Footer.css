@@ -1,69 +1,61 @@
 footer {
-    display: flex;
+  display: flex;
+  position: relative;
+  margin-top: -7rem;
+  align-items: center;
+  height: auto;
+  margin: -0.5, 16.5rem;
+}
+.f-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12rem;
+  color: white;
+  padding-left: 1rem;
+  gap: 1rem;
+}
+.f-content > span {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  color: rgb(228, 225, 225);
+}
+.f-icons {
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  display: flex;
+  height: 1.5vh;
+  width: 1.5vh;
+  border: 1px solid transparent;
+}
+.f-icons > *:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.f-icons > * {
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
+  padding-right: 1rem;
+}
+@media screen and (max-width: 480px) {
+  p {
+    font-size: 12px;
+    min-height: calc(27vh - 9px);
     position: relative;
-    margin-top: -7rem;
-    align-items: center;
-    height: auto;
-    margin: -0.5, 16.5rem;
+    color: rgb(236, 233, 233);
+    left: -5%;
   }
-  .f-content {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    margin-top: 12rem;
-    color: white;
-    padding-left: 1rem;
-    gap: 1rem;
+  .f-icons > a {
+    transform: scale(0.4);
+    min-height: calc(157vh - 9px);
+    position: relative;
+    left: -7%;
   }
-  .f-content > span {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-size: 0.9rem;
-    color: rgb(228, 225, 225);
+  footer {
+    height: 4rem;
+    width: 100%;
   }
-  .f-icons {
-    color: #fff;
-    padding: 0.8rem;
-    border-radius: 0.7rem;
-    display: flex;
-    height: 1.5vh;
-    width: 1.5vh;
-    border: 1px solid transparent;
-  }
-  .f-icons > *:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-  }
-  .f-icons > * {
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 1s;
-    -webkit-transition-timing-function: ease;
-    padding-right: 1rem;
-  }
-  @media screen and (max-width: 480px) {
-    .f-icons, .spaan{
-      min-height: calc(30vh - 70px);
-      transform: scale(0.2);
-      position: relative;
-      left: -40%;
-    }
-  
-    /* .f-content{
-      /* min-height: calc(10vh - 7px); */
-      /* transform: scale(0.4);
-      position: relative;
-      left: -40%;
-    } */ 
-    /* }
-     .wrapper{
-      height: 100%;
-      margin: 0;
-     }
-     .footer{
-      min-height: 20%;
-      /* margin-bottom: -50px; */
-     /* }
-     .footer-w , .push{
-      height: 0;
-     } */ 
-  }
+}

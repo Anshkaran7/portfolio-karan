@@ -70,6 +70,39 @@
       left: 120%;
       top: 10%;
   }
+ .bars{
+  transform: scale(1.5);
+  /* display: none; */
+  border: 0;
+  height: 40px;
+  width: 40px;
+  /* padding: 0.5rem; */
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  /* position: absolute;
+  top: 50%;
+  right: 25px; */
+  /* transform: translateY(-50%); */
+  
+ }
+ .bars:hover{
+  color: #f43b47;
+ }
+ .n-list ul {
+  display: flex;
+  padding: 0;
+}
+.n-list li {
+  /* // removes default disc bullet for li tags and applies margin to left & right side */
+  list-style-type: none;
+  margin: 0 1rem;
+}
+.n-list li a {
+  /* // increases the surface area of the anchor tag to span more than just the anchor text */
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
   @media screen and (max-width: 480px) {
     .n-list{
       display: none;
@@ -77,5 +110,41 @@
     }
     .n-name{
       font-size: 2rem;
+    }
+    .bars{
+      display: block;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .bars {
+      display: block;
+    }
+  .n-list ul {
+      display: none;
+    }
+    nav{
+      height: 10vh;
+    }
+    .n-list ul {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      height: calc(100vh - 77px);
+      background-color: white;
+      border-top: 1px solid black;
+    }
+    .n-list li {
+      text-align: center;
+      margin: 0;
+    }
+    .n-list li a {
+      color: black;
+      width: 100%;
+      padding: 1.5rem 0;
+    }
+    .n-list li:hover {
+      background-color: #eee;
     }
   }

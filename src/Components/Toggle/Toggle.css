@@ -23,3 +23,11 @@
 .toggle>:nth-child(1){
     color: var(--black);
 }
+@media screen and (max-width:480px) 
+{
+  .toggle{
+    position: relative;
+    left: 65%;
+    transform: scale(0.9);
+  }
+}

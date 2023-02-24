@@ -3,16 +3,21 @@ import "./Navbar.css";
 import Toggle from "../Toggle/Toggle";
 import { Link } from "react-scroll";
 import About from "../About/About";
+import { FaBars } from "react-icons/fa";
+
+
 
 const Navbar = () => {
   return (
-    <nav id="">
+    <nav id="Navbar">
       <div className="n-wrapper">
         <div className="n-left">
           <div className="n-name">Karan</div>
           <Toggle />
         </div>
+
         <div className="n-right">
+          
           <div className="n-list">
             <ul style={{ listStyleType: "none" }}>
               <Link
@@ -42,7 +47,10 @@ const Navbar = () => {
             </ul>
           </div>
           <button className="button ct-button">Contact</button>
+          <div className="bars"><FaBars/></div>
+        
         </div>
+        
       </div>
     </nav>
   );

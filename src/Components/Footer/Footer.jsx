@@ -10,7 +10,7 @@ const Footer = () => {
     <footer>
       <img src={Wave} />
       <div className="f-content">
-        <span className="sppan"> ©karanchandravanshi217@gmail.com</span>
+        <p className="sppan"> ©karanchandravanshi217@gmail.com</p>
         <div className="f-icons">
           <a href="https://www.instagram.com/anshkaran7/" target="_blank">
             <FaInstagram color="white" size="2rem" />
