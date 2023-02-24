@@ -1,7 +1,7 @@
 footer {
   display: flex;
   position: relative;
-  margin-top: -7rem;
+  margin-top: -10rem;
   align-items: center;
   height: auto;
   margin: -0.5, 16.5rem;
@@ -10,12 +10,12 @@ footer {
   position: absolute;
   display: flex;
   flex-direction: column;
-  margin-top: 12rem;
+  margin-top: 8rem;
   color: white;
   padding-left: 1rem;
   gap: 1rem;
 }
-.f-content > span {
+.f-content > p {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 0.9rem;
@@ -41,23 +41,24 @@ footer {
   padding-right: 1rem;
 }
 @media screen and (max-width: 480px) {
-  p {
-    font-size: 12px;
-    min-height: calc(20vh - 9px);
-    position: relative;
+  /* p { */
+    /* font-size: 10px; */
+    /* min-height: calc(10vh - 9px); */
+    /* position: relative;
     color: rgb(236, 233, 233);
     left: -5%;
     
-  }
-  .f-icons > a {
-    transform: scale(0.4);
-    min-height: calc(140vh - 9px);
+  } */
+  .f-content>p , .f-icons {
+    /* transform: scale(0.4);
+    min-height: calc(900vh - 9px);
     position: relative;
-    left: -7%;
+    left: -7%; */
+    display: none;
   }
   footer {
     height: 4rem;
     width: 100%;
-    
   }
+ 
 }

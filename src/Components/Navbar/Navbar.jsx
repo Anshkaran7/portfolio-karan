@@ -3,7 +3,7 @@ import "./Navbar.css";
 import Toggle from "../Toggle/Toggle";
 import { Link } from "react-scroll";
 import About from "../About/About";
-import { FaBars } from "react-icons/fa";
+
 
 
 
@@ -47,7 +47,6 @@ const Navbar = () => {
             </ul>
           </div>
           <button className="button ct-button">Contact</button>
-          <div className="bars"><FaBars/></div>
         
         </div>
         
