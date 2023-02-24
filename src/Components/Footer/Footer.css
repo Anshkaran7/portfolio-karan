@@ -43,7 +43,7 @@ footer {
 @media screen and (max-width: 480px) {
   p {
     font-size: 12px;
-    min-height: calc(25vh - 9px);
+    min-height: calc(20vh - 9px);
     position: relative;
     color: rgb(236, 233, 233);
     left: -5%;
@@ -51,7 +51,7 @@ footer {
   }
   .f-icons > a {
     transform: scale(0.4);
-    min-height: calc(150vh - 9px);
+    min-height: calc(140vh - 9px);
     position: relative;
     left: -7%;
   }
