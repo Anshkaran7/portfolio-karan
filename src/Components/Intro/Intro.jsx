@@ -23,7 +23,7 @@ const transition ={duration:2,type:'spring'}
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          <span className="hi"style={{color:darkMode?'white':''}} >Hy, I Am </span>
+          <span className="hi"style={{color:darkMode?'white':''}} >Hey, I Am </span>
           <span className="name">Karan Kumar </span>
           <span>
             Frontend Web Developer with good knowledge in <br /> web designing
