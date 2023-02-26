@@ -12,8 +12,14 @@ const Contact = () => {
       e.preventDefault();
   
       emailjs.sendForm('service_ryajw3b', 'template_i8h1wqc', form.current, 'dD1CJrkDYVp5SRT8E')
-  
-      e.target.reset()
+   .then((result) => {
+      alert("Your message was sent successfully!");
+      
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+    e.target.reset();
     };
   const transition ={duration:3,type:'spring'}
   const theme = useContext(themeContext);
