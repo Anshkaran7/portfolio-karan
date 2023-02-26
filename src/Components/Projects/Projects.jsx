@@ -51,7 +51,7 @@ const Projects = () => {
           }}
             photo={Project2}
             heading={"Quiz App"}
-            detail={"5 questions Quiz App by using HTML, CSS & JS"}
+            detail={"5 questions Quiz App by using HTML, CSS & JS [Desktop size only Not Responsive"}
           />
         </div>
         <div className="projectC">
@@ -63,7 +63,7 @@ const Projects = () => {
           }}
             photo={Project3}
             heading={"Skybags"}
-            detail={"Landing Page of a product using Html css and js "}
+            detail={"Landing Page of a product using Html css and js [Desktop size only not Responsive] "}
           />
         </div>
         <div className="projectD">
