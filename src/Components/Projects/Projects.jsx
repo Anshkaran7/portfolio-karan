@@ -47,7 +47,7 @@ const Projects = () => {
             window.open('https://github.com/Anshkaran7/Quiz-app')
           }}
           onPress2={()=>{
-            window.open('https://quiz-karan.netlify.app')
+            window.open('https://quiz-app-karan.vercel.app/')
           }}
             photo={Project2}
             heading={"Quiz App"}
