@@ -51,7 +51,7 @@ const Projects = () => {
           }}
             photo={Project2}
             heading={"Quiz App"}
-            detail={"Quiz App by using HTML, CSS & JS [Desktop size only Not Responsive]"}
+            detail={"Quiz App by using HTML, CSS & JS"}
           />
         </div>
         <div className="projectC">
