@@ -11,10 +11,10 @@ const Work = ({ photo, heading, detail, onPress, onPress2 }) => {
       <span style={{ color: darkMode ? "white" : "" }}>{heading}</span>
       <span>{detail}</span>
       <div className="btn">
-        <button onClick={onPress} className="w-button1">
+        <button  style={{ color: darkMode ? "white" : "" }} onClick={onPress} className="w-button1">
           Source Code
         </button>
-        <button className="w-button2" onClick={onPress2}>
+        <button style={{ color: darkMode ? "white" : "" }} className="w-button2" onClick={onPress2}>
           Go Live
         </button>
       </div>
